@@ -10,6 +10,8 @@ This repository contains code, datasets, and results from the paper:
 
 ## Code
 
+> **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is possible in the scripts below. 
+
 ### Optimizing PVs
 
 - [QoI-aware encoder-decoder for the $(f, PV)$ optimization](code/QoI-aware-ED-f-PV.py)
