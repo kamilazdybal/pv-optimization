@@ -28,6 +28,6 @@ This repository contains code, datasets, and results from the paper:
 
 ## Jupyter notebooks
 
-### Reproducing Figs.2-3
+### Reproducing Figs. 2-3
 
-→ This [Jupyter notebook](Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Figs.2-3.
+→ This [Jupyter notebook](jupyter-notebooks/Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Figs. 2-3.
