@@ -26,6 +26,20 @@ This repository contains code, datasets, and results from the paper:
 
 - Master script for running PV optimization [`RUN-VarianceData.py`](code/RUN-VarianceData.py)
 
+### Running Python jobs
+
+This is a minimal example for running a Python script with all hyper-parameters as described in section 2.2:
+
+```bash
+python RUN-PV-optimization.py --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
+```
+
+Alternatively, you can change various parameters using the appropriate argument:
+
+```bash
+python RUN-PV-optimization.py --no-pure-streams --initializer 'GlorotUniform' --init_lr 0.001 --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
+```
+
 ## Jupyter notebooks
 
 ### Reproducing Figs. 2-3
