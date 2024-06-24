@@ -22,7 +22,7 @@ This repository contains code, datasets, and results from the paper:
 ### Quantiative assessment of PVs
 
 - [Assessment of $(f, PV)$ parameterizations](code/VarianceData-f-PV.py)
-- [Assessment of $(f, PV, \gamma)$ parameterizations](code/VarianceData-f-PV-h.py)
+[Assessment of $(f, PV, \gamma)$ parameterizations [`VarianceData-f-PV-h.py`](code/VarianceData-f-PV-h.py)
 
 - [Master script for running PV optimization](code/RUN-VarianceData.py)
 
