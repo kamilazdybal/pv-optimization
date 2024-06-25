@@ -38,11 +38,19 @@ This is a minimal example for running a Python script with all hyper-parameters 
 python RUN-PV-optimization.py --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
 ```
 
-Alternatively, you can change various parameters (kernel initializer, learning rate, etc.) using the appropriate argument:
+Alternatively, you can change various parameters (kernel initializer, learning rate, *etc*.) using the appropriate argument:
 
 ```bash
-python RUN-PV-optimization.py --no-pure-streams --initializer 'GlorotUniform' --init_lr 0.001 --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
+python RUN-PV-optimization.py --initializer 'GlorotUniform' --init_lr 0.001 --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
 ```
+
+If you'd like to remove pure stream components from the PV definition (**non-trainable pure streams** preprocessing as discussed in section 3.4. in the paper) use the flag:
+
+```bash
+--no-pure_streams
+```
+
+as an extra argument.
 
 ## Jupyter notebooks
 
