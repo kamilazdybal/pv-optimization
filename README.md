@@ -57,3 +57,8 @@ as an extra argument.
 ### Reproducing Figs. 2-3
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Figs. 2-3.
+
+### Reproducing Fig. 4 and Fig. 10
+
+→ This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4 and Fig. 10.
+
