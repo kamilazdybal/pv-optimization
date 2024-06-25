@@ -2,7 +2,11 @@
 
 This repository contains code, datasets, and results from the paper:
 
-> K. Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, 2024.
+> Kamila Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, 2024.
+
+<p align="center">
+  <img src="https://github.com/kamilazdybal/pv-optimization/raw/main/figures/ED-for-PV-optimization.png" width="300">
+</p>
 
 ## Data
 
@@ -28,13 +32,13 @@ This repository contains code, datasets, and results from the paper:
 
 ### Running Python jobs
 
-This is a minimal example for running a Python script with all hyper-parameters as described in section 2.2:
+This is a minimal example for running a Python script with all hyper-parameters set as per section 2.2 in the paper:
 
 ```bash
 python RUN-PV-optimization.py --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
 ```
 
-Alternatively, you can change various parameters using the appropriate argument:
+Alternatively, you can change various parameters (kernel initializer, learning rate, etc.) using the appropriate argument:
 
 ```bash
 python RUN-PV-optimization.py --no-pure-streams --initializer 'GlorotUniform' --init_lr 0.001 --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
