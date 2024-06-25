@@ -14,21 +14,34 @@ This repository contains code, datasets, and results from the paper:
 
 ## Code
 
+### The order of executing scripts:
+
+First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py). Once you have the results files, you can
+run quantitative assessment of PVs by running [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
+
 > **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is possible in the scripts below. 
 
 ### Optimizing PVs
 
+- Master script for running PV optimization [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py)
+
+The above script uses one of the following under the hood:
+
 - QoI-aware encoder-decoder for the $(f, PV)$ optimization [`QoI-aware-ED-f-PV.py`](code/QoI-aware-ED-f-PV.py)
 - QoI-aware encoder-decoder for the $(f, PV, \gamma)$ optimization [`QoI-aware-ED-f-PV-h.py`](code/QoI-aware-ED-f-PV-h.py)
 
-- Master script for running PV optimization [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py)
+depending on which `--parameterization` you selected.
 
 ### Quantitative assessment of PVs
+
+- Master script for running PV optimization [`RUN-VarianceData.py`](code/RUN-VarianceData.py)
+
+The above script uses one of the following under the hood:
 
 - Assessment of $(f, PV)$ parameterizations [`VarianceData-f-PV.py`](code/VarianceData-f-PV.py)
 - Assessment of $(f, PV, \gamma)$ parameterizations [`VarianceData-f-PV-h.py`](code/VarianceData-f-PV-h.py)
 
-- Master script for running PV optimization [`RUN-VarianceData.py`](code/RUN-VarianceData.py)
+depending on which `--parameterization` you selected.
 
 ### Running Python jobs
 
@@ -51,6 +64,18 @@ If you'd like to remove pure stream components from the PV definition (**non-tra
 ```
 
 as an extra argument.
+
+To run $(f, PV)$ optimization, use the default argument:
+
+```bash
+--parameterization 'f-PV'
+```
+
+To switch to $(f, PV, \gamma)$ parameterization, use:
+
+```bash
+--parameterization 'f-PV-h'
+```
 
 ## Jupyter notebooks
 
