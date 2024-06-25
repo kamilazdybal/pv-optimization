@@ -19,7 +19,14 @@ This repository contains code, datasets, and results from the paper:
 First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py). Once you have the results files, you can
 run quantitative assessment of PVs by running [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
 
-> **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is possible in the scripts below. 
+You have a lot of flexibility in setting different parameters in those two scripts using the `argparse` Python library.
+
+If you're new to `argparse`, check out my short video tutorials:
+
+- [Intro to argparse](https://youtu.be/ONCv_ql2xpE)
+- [Setting booleans with argparse](https://youtu.be/8gfFteE6jz0)
+
+> **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is possible in the scripts below.
 
 ### Optimizing PVs
 
@@ -78,6 +85,8 @@ To switch to $(f, PV, \gamma)$ parameterization, use:
 ```
 
 ## Jupyter notebooks
+
+All results are post-processed and visualized in dedicated Jupyter notebooks. You can access the appropriate notebook below:
 
 ### Reproducing Figs. 2-3
 
