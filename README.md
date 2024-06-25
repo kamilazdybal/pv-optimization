@@ -14,19 +14,17 @@ This repository contains code, datasets, and results from the paper:
 
 ## Code
 
-### The order of executing scripts:
+### The order of executing scripts
 
 First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py). Once you have the results files, you can
-run quantitative assessment of PVs by running [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
+run quantitative assessment of PVs with [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
 
-You have a lot of flexibility in setting different parameters in those two scripts using the `argparse` Python library.
+You have a lot of flexibility in setting different ANN hyper-parameters in those two scripts using the `argparse` Python library.
 
 If you're new to `argparse`, check out my short video tutorials:
 
 - [Intro to argparse](https://youtu.be/ONCv_ql2xpE)
 - [Setting booleans with argparse](https://youtu.be/8gfFteE6jz0)
-
-> **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is possible in the scripts below.
 
 ### Optimizing PVs
 
@@ -72,17 +70,19 @@ If you'd like to remove pure stream components from the PV definition (**non-tra
 
 as an extra argument.
 
-To run $(f, PV)$ optimization, use the default argument:
+To run $(f, PV)$ optimization, use:
 
 ```bash
 --parameterization 'f-PV'
 ```
 
-To switch to $(f, PV, \gamma)$ parameterization, use:
+To run $(f, PV, \gamma)$ optimization, use:
 
 ```bash
 --parameterization 'f-PV-h'
 ```
+
+> **Note:** Logging with [Weights & Biases](https://wandb.ai/site) is also possible in the scripts above.
 
 ## Jupyter notebooks
 
