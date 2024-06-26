@@ -8,16 +8,19 @@ This repository contains code, datasets, and results from the paper:
   <img src="https://github.com/kamilazdybal/pv-optimization/raw/main/figures/ED-for-PV-optimization.png" width="500">
 </p>
 
-## Data
+## Data and results files
 
-- Script for loading data [`ammonia-Stagni-load-data.py`](code/ammonia-Stagni-load-data.py)
+Data and results files will be shared separately via GoogleDrive as they take over 5GB of space.
 
-## Code
+- Script for loading data [`ammonia-Stagni-load-data.py`](scripts/ammonia-Stagni-load-data.py)
+
+## Python scripts
 
 ### The order of executing scripts
 
-First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py) with appropriate parameters. Once you have the results files, you can
-run quantitative assessment of PVs with [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
+First, run the PV optimization with [`RUN-PV-optimization.py`](scripts/RUN-PV-optimization.py) with desired parameters. 
+Once you have the results files, you can run quantitative assessment of PVs with [`RUN-VarianceData.py`](scripts/RUN-VarianceData.py). 
+Both those scripts load the appropriate data under the hood using [`ammonia-Stagni-load-data.py`](scripts/ammonia-Stagni-load-data.py).
 
 You have a lot of flexibility in setting different ANN hyper-parameters in those two scripts using the `argparse` Python library.
 If you're new to `argparse`, check out my short video tutorials:
@@ -27,29 +30,29 @@ If you're new to `argparse`, check out my short video tutorials:
 
 ### Optimizing PVs
 
-- Master script for running PV optimization [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py)
+- Master script for running PV optimization [`RUN-PV-optimization.py`](scripts/RUN-PV-optimization.py)
 
 The above script uses one of the following under the hood:
 
-- QoI-aware encoder-decoder for the $(f, PV)$ optimization [`QoI-aware-ED-f-PV.py`](code/QoI-aware-ED-f-PV.py)
-- QoI-aware encoder-decoder for the $(f, PV, \gamma)$ optimization [`QoI-aware-ED-f-PV-h.py`](code/QoI-aware-ED-f-PV-h.py)
+- QoI-aware encoder-decoder for the $(f, PV)$ optimization [`QoI-aware-ED-f-PV.py`](scripts/QoI-aware-ED-f-PV.py)
+- QoI-aware encoder-decoder for the $(f, PV, \gamma)$ optimization [`QoI-aware-ED-f-PV-h.py`](scripts/QoI-aware-ED-f-PV-h.py)
 
 depending on which `--parameterization` you selected.
 
 ### Quantitative assessment of PVs
 
-- Master script for running PV optimization [`RUN-VarianceData.py`](code/RUN-VarianceData.py)
+- Master script for running PV optimization [`RUN-VarianceData.py`](scripts/RUN-VarianceData.py)
 
 The above script uses one of the following under the hood:
 
-- Assessment of $(f, PV)$ parameterizations [`VarianceData-f-PV.py`](code/VarianceData-f-PV.py)
-- Assessment of $(f, PV, \gamma)$ parameterizations [`VarianceData-f-PV-h.py`](code/VarianceData-f-PV-h.py)
+- Assessment of $(f, PV)$ parameterizations [`VarianceData-f-PV.py`](scripts/VarianceData-f-PV.py)
+- Assessment of $(f, PV, \gamma)$ parameterizations [`VarianceData-f-PV-h.py`](scripts/VarianceData-f-PV-h.py)
 
 depending on which `--parameterization` you selected.
 
 ### Running Python jobs
 
-This is a minimal example for running a Python script with all hyper-parameters set as per section 2.2 in the paper:
+This is a minimal example for running a Python script with all hyper-parameters set as per §2.2 in the paper:
 
 ```bash
 python RUN-PV-optimization.py --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
@@ -61,7 +64,7 @@ Alternatively, you can change various parameters (kernel initializer, learning r
 python RUN-PV-optimization.py --initializer 'GlorotUniform' --init_lr 0.001 --parameterization 'f-PV' --data_type 'SLF' --data_tag 'NH3-H2-air-25perc' --random_seeds_tuple 0 20 --target_variables_indices 0 1 3 5 6 9
 ```
 
-If you'd like to remove pure stream components from the PV definition (**non-trainable pure streams** preprocessing as discussed in section 3.4. in the paper) use the flag:
+If you'd like to remove pure stream components from the PV definition (**non-trainable pure streams** preprocessing as discussed in §3.4. in the paper) use the flag:
 
 ```bash
 --no-pure_streams
@@ -87,14 +90,14 @@ To run $(f, PV, \gamma)$ optimization, use:
 
 All results are post-processed and visualized in dedicated Jupyter notebooks. You can access the appropriate notebook below:
 
-### Reproducing Figs. 2-3
+### Reproducing Figs. 2-3 - Quantitative assessment of the optimized PVs
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Figs. 2-3.
 
-### Reproducing Fig. 4 and Fig. 10
+### Reproducing Fig. 4 and Fig. 10 - Physical insight into the optimized PVs
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4 and Fig. 10.
 
-### Reproducing supplementary Figs. S37-S38
+### Reproducing supplementary Figs. S37-S38 - The effect of scaling encoder inputs prior to training
 
 → This [Jupyter notebook](jupyter-notebooks/SUPPLEMENT-Effect-of-scaling-encoder-inputs.ipynb) can be used to reproduce supplementary Figs. S37-S38.
