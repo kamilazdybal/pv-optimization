@@ -16,11 +16,10 @@ This repository contains code, datasets, and results from the paper:
 
 ### The order of executing scripts
 
-First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py). Once you have the results files, you can
+First, run the PV optimization with [`RUN-PV-optimization.py`](code/RUN-PV-optimization.py) with appropriate parameters. Once you have the results files, you can
 run quantitative assessment of PVs with [`RUN-VarianceData.py`](code/RUN-VarianceData.py).
 
 You have a lot of flexibility in setting different ANN hyper-parameters in those two scripts using the `argparse` Python library.
-
 If you're new to `argparse`, check out my short video tutorials:
 
 - [Intro to argparse](https://youtu.be/ONCv_ql2xpE)
@@ -96,3 +95,6 @@ All results are post-processed and visualized in dedicated Jupyter notebooks. Yo
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4 and Fig. 10.
 
+### Reproducing supplementary Figs. S37-S38
+
+→ This [Jupyter notebook](jupyter-notebooks/SUPPLEMENT-Effect-of-scaling-encoder-inputs.ipynb) can be used to reproduce supplementary Figs. S37-S38.
