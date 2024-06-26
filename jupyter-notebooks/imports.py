@@ -4,7 +4,6 @@ import time
 import random
 import csv
 import copy as cp
-from tqdm import tqdm
 import heapq
 import h5py
 import pickle

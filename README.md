@@ -14,6 +14,29 @@ Data and results files will be shared separately via GoogleDrive as they take ov
 
 - Script for loading data [`ammonia-Stagni-load-data.py`](scripts/ammonia-Stagni-load-data.py)
 
+## Requirements
+
+We have used `Python==3.10.13` and the following versions of all libraries:
+
+```bash
+pip install numpy==1.26.2
+pip install pandas==2.1.3
+pip install scipy==1.11.4
+pip install scikit-learn==1.3.2
+pip install tensorflow==2.15.0
+pip install keras==2.15.0
+```
+
+You will also need our library [`PCAfold==2.2.0`](https://pcafold.readthedocs.io/en/latest/index.html).
+
+Other requirements are:
+
+```bash
+pip install matplotlib
+pip install plotly
+pip install cmcrameri
+```
+
 ## Python scripts
 
 ### The order of executing scripts
