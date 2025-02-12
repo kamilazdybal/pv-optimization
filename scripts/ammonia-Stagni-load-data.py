@@ -12,8 +12,8 @@ elif data_type == 'STLF':
 elif data_type == 'NA-SLF':
     file_prefix = '../data/non-adiabatic-SLF-'
 elif data_type == 'AI':
-    file_prefix = '../data/isobaric-adiabatic-closed-HR-'
-    time_vector = pd.read_csv('../data/isobaric-adiabatic-closed-HR-' + data_tag + '-time.csv', sep = ',', header=None).to_numpy()
+    file_prefix = '../data/isochoric-adiabatic-closed-HR-'
+    time_vector = pd.read_csv('../data/isochoric-adiabatic-closed-HR-' + data_tag + '-time.csv', sep = ',', header=None).to_numpy()
 elif data_type == 'FPF':
     file_prefix = '../data/freely-propagating-flame-'
     grid = pd.read_csv('../data/freely-propagating-flame-' + data_tag + '-grid.csv', sep = ',', header=None).to_numpy()
