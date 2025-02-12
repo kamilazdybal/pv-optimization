@@ -39,6 +39,10 @@ pip install cmcrameri
 
 ## Python scripts
 
+Python scripts stored in `scripts/` allow you to train encoders-decoders and assess the optimized PVs.
+The scripts will produce results saved as `.csv` and `.h5` files that you can later post-process with dedicated
+Jupyter notebooks stored in `jupyter-notebooks/`.
+
 ### The order of executing scripts
 
 First, run the PV optimization with [`RUN-PV-optimization.py`](scripts/RUN-PV-optimization.py) with desired parameters. 
@@ -51,7 +55,7 @@ If you're new to `argparse`, check out my short video tutorials:
 - [Intro to argparse](https://youtu.be/ONCv_ql2xpE)
 - [Setting booleans with argparse](https://youtu.be/8gfFteE6jz0)
 
-### Optimizing PVs
+#### Optimizing PVs
 
 - Master script for running PV optimization [`RUN-PV-optimization.py`](scripts/RUN-PV-optimization.py)
 
@@ -62,7 +66,7 @@ The above script uses one of the following under the hood:
 
 depending on which `--parameterization` you selected.
 
-### Quantitative assessment of PVs
+#### Quantitative assessment of PVs
 
 - Master script for running PV optimization [`RUN-VarianceData.py`](scripts/RUN-VarianceData.py)
 
@@ -111,7 +115,9 @@ To run $(f, PV, \gamma)$ optimization, use:
 
 ## Jupyter notebooks
 
-All results are post-processed and visualized in dedicated Jupyter notebooks. You can access the appropriate notebook below:
+Results generated with the Python scripts described above can be post-processed and visualized 
+in dedicated Jupyter notebooks stored in `jupyter-notebooks/`.
+You can access the appropriate notebook below:
 
 ### Reproducing Fig. 2 and Fig. 3 - Quantitative assessment of the optimized PVs
 
