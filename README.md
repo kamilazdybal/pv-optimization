@@ -113,17 +113,21 @@ To run $(f, PV, \gamma)$ optimization, use:
 
 All results are post-processed and visualized in dedicated Jupyter notebooks. You can access the appropriate notebook below:
 
-### Reproducing Figs. 2-3 - Quantitative assessment of the optimized PVs
+### Reproducing Fig. 2 and Fig. 3 - Quantitative assessment of the optimized PVs
 
-→ This [Jupyter notebook](jupyter-notebooks/Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Figs. 2-3.
+→ This [Jupyter notebook](jupyter-notebooks/Figure-02-03-Quantitative-assessment-of-the-optimized-PVs.ipynb) can be used to reproduce Fig. 2 and Fig. 3.
 
-### Reproducing Fig. 4 and Fig. 10 - Physical insight into the optimized PVs
+### Reproducing Fig. 4 - Physical insight into the optimized PVs
 
-→ This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4 and Fig. 10.
+→ This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4
 
 ### Reproducing Fig. 5, Fig. 6, and Fig. 7 - Towards flamelet-like model adaptivity
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-05-06-07-Towards-flamelet-like-model-adaptivity.ipynb) can be used to reproduce Fig. 5, Fig. 6, and Fig. 7
+
+### Reproducing Fig. 8, Fig. 9, and Fig. 10 - The effect of trainable vs. non-trainable pure streams
+
+→ This [Jupyter notebook](jupyter-notebooks/Figure-08-09-10-Non-trainable-pure-streams.ipynb) can be used to reproduce Fig. 8, Fig. 9, and Fig. 10
 
 ### Reproducing supplementary Figs. S37-S38 - The effect of scaling encoder inputs prior to training
 
