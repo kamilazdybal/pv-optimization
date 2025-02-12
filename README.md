@@ -121,6 +121,10 @@ All results are post-processed and visualized in dedicated Jupyter notebooks. Yo
 
 → This [Jupyter notebook](jupyter-notebooks/Figure-04-Physical-insight-into-the-optimized-PVs.ipynb) can be used to reproduce Fig. 4 and Fig. 10.
 
+### Reproducing Fig. 5, Fig. 6, and Fig. 7 - Towards flamelet-like model adaptivity
+
+→ This [Jupyter notebook](jupyter-notebooks/Figure-05-06-07-Towards-flamelet-like-model-adaptivity.ipynb) can be used to reproduce Fig. 5, Fig. 6, and Fig. 7
+
 ### Reproducing supplementary Figs. S37-S38 - The effect of scaling encoder inputs prior to training
 
 → This [Jupyter notebook](jupyter-notebooks/SUPPLEMENT-Effect-of-scaling-encoder-inputs.ipynb) can be used to reproduce supplementary Figs. S37-S38.
