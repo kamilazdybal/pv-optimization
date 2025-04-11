@@ -2,7 +2,7 @@
 
 This repository contains code, datasets, and results from the paper:
 
-> Kamila Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, 2025.
+> [Kamila Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, Combustion and Flame, 276:114152, 2025.](https://www.sciencedirect.com/science/article/pii/S0010218025001907)
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/pv-optimization/raw/main/figures/ED-for-PV-optimization.png" width="500">
