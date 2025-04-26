@@ -2,7 +2,24 @@
 
 This repository contains code, datasets, and results from the paper:
 
-> [Kamila Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, Combustion and Flame, 276:114152, 2025.](https://www.sciencedirect.com/science/article/pii/S0010218025001907)
+> Kamila Zdybał, James C. Sutherland, Alessandro Parente - *Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks*, Combustion and Flame, 276:114152, 2025.
+
+You can find the open-source article here: https://www.sciencedirect.com/science/article/pii/S0010218025001907/pdf.
+
+BibTeX  citation:
+
+```
+@article{zdybal2025optimizing,
+title = {Optimizing progress variables for ammonia/hydrogen combustion using encoding-decoding networks},
+author = {Kamila Zdybał and James C. Sutherland and Alessandro Parente},
+journal = {Combustion and Flame},
+volume = {276},
+pages = {114152},
+issn = {0010-2180},
+year = {2025},
+publisher={Elsevier}
+}
+```
 
 <p align="center">
   <img src="https://github.com/kamilazdybal/pv-optimization/raw/main/figures/ED-for-PV-optimization.png" width="500">
